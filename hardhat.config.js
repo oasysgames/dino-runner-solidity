@@ -1,5 +1,8 @@
 require("@nomiclabs/hardhat-waffle");
 
+// Create secrets.json file with private key and remove comment out
+//const { PRIVATE_KEY } = require('./secrets.json');
+
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
@@ -26,6 +29,11 @@ module.exports = {
       url: 'https://rpc.testnet.oasys.homeverse.games/',
       chainId: 40875,
       gasPrice: 0,
+      accounts: [
+        // Provide your private key here
+        // Remove comment out to use value from secrets.json
+        //PRIVATE_KEY
+      ],
     },
   },
 };
