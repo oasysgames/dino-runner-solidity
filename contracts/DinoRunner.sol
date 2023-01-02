@@ -33,7 +33,7 @@ contract DinoRunner is ERC721, Ownable {
                                 Strings.toString(tokenId),
                                 '",',
                                 '"image":"',
-                                'https://raw.githubusercontent.com/doublejumptokyo/dino-runner-client/blob/main/src/assets/images/dinos/pixelDinoMonochromeSingleFrame.png',
+                                'https://raw.githubusercontent.com/oasysgames/dino-runner-client/blob/main/src/assets/images/dinos/pixelDinoMonochromeSingleFrame.png',
                             '"}'
                         )
                     )
